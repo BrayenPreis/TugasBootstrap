@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Theme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      :root {
+        --primary-color: #ff4136; /* Vibrant red */
+        --secondary-color: #333333; /* Dark gray */
+        --background-color: #1a1a1a; /* Darker gray for background */
+        --text-color: #ffffff; /* White text */
+        --accent-color: #ff8c00; /* Orange for accents */
+      }
+
+      body {
+        background: linear-gradient(135deg, var(--secondary-color), var(--background-color));
+        color: var(--text-color);
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: rgba(26, 26, 26, 0.8); /* Slightly transparent dark background */
+        backdrop-filter: blur(10px);
+      }
+
+      nav a {
+        color: var(--text-color) !important;
+      }
+
+      nav a[role="button"] {
+        background-color: var(--primary-color) !important;
+        color: var(--text-color) !important;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--primary-color);
+      }
+
+      button, input[type="submit"] {
+        background-color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+        color: var(--text-color) !important;
+      }
+
+      button:hover, input[type="submit"]:hover {
+        background-color: var(--accent-color) !important;
+        border-color: var(--accent-color) !important;
+      }
+
+      .container, article {
+        background-color: rgba(51, 51, 51, 0.8); /* Slightly transparent dark background */
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      a {
+        color: var(--accent-color);
+      }
+
+      a:hover {
+        color: var(--primary-color);
+      }
+
+      input, textarea, select {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        color: var(--text-color) !important;
+      }
+
+      input::placeholder, textarea::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+      }
+
+      /* Center the fitness trends image and set a smaller size */
+      img[alt="Fitness Trends Image"] {
+        max-width: 60%; /* Reduce width to 60% */
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* Set consistent size for fashion images */
+      .fashion-image {
+        width: 100%;
+        height: 500px; /* Fixed height for uniformity */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-primary" href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5">
+      <section>
+        <h1 class="text-center mb-4">Welcome to the Lifestyle Hub</h1>
+        <h2 class="text-center mb-4">Explore trends, wellness, and living your best life</h2>
+        <p class="text-center mb-5">
+          Lifestyle is about achieving a healthy, balanced, and happy life. Here, you'll find inspiration to maintain physical and mental well-being, fitness tips, and guides to living a meaningful life.
+        </p>
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <img src="/image/Fitness Trend.webp" alt="Wellness lifestyle image" class="img-fluid rounded w-100">
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-4">Latest in Fitness Trends</h3>
+        <p>
+          Discover new meditation techniques, balanced diet tips, and fitness routines to help you stay healthy and energized.
+        </p>
+        <div class="row mb-5">
+          <div class="col-md-12 d-flex justify-content-center">
+            <img src="/image/New-Fitness-Trends.png" alt="Fitness Trends Image" class="img-fluid rounded" style="max-width: 60%; height: auto;">
+          </div>
+        </div>
+
+        <h3 class="mt-5 mb-4">Explore Fashion & Trends</h3>
+        <p>
+          Stay up-to-date with the latest fashion trends, and learn tips on choosing eco-friendly fashion options.
+        </p>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <img src="/image/Fashion1.jpeg" alt="Fashion 1" class="img-fluid rounded fashion-image">
+            <p class="text-center mt-2">Classic Elegance in Organic Fabric</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <img src="/image/Fashion2.jpeg" alt="Fashion 2" class="img-fluid rounded fashion-image">
+            <p class="text-center mt-2">Sustainable Activewear</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <img src="/image/Fashion3.jpeg" alt="Fashion 3" class="img-fluid rounded fashion-image">
+            <p class="text-center mt-2">Eco-conscious Formal Attire</p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <img src="/image/Fashion4.jpeg" alt="Fashion 4" class="img-fluid rounded fashion-image">
+            <p class="text-center mt-2">Classic Chic Blazer Set</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="bg-light py-5 mt-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Readers Say</h2>
+        <h3 class="text-center mb-5">Real feedback from our community</h3>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote">
+              <p class="mb-0 text-dark">
+                "The healthy lifestyle guides here have completely changed my approach to wellness. They are so practical and easy to apply!"
+              </p>
+              <footer class="blockquote-footer mt-2 text-dark">Joseph Joestar</footer>
+            </blockquote>
+          </div>
+          <div class="col-md-6 mb-4">
+            <blockquote class="blockquote">
+              <p class="mb-0 text-dark">
+                "This site is my main reference for the latest fashion trends and eco-friendly options!"
+              </p>
+              <footer class="blockquote-footer mt-2 text-dark">Lisa</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Join Our Community</h2>
+        <h3 class="text-center mb-5">Subscribe for the latest lifestyle updates</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="FullName" name="FullName" placeholder="Full Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary" onclick="event.preventDefault()">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <small>
+          <a href="#" class="text-light">Privacy Policy</a> •
+          <a href="#" class="text-light">Terms & Conditions</a> •
+          &copy; 2024 Brayen Preis_535230022
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --primary-color: #ff4136;
+        --secondary-color: #333333;
+        --background-color: #1a1a1a;
+        --text-color: #ffffff;
+        --accent-color: #ff8c00;
+      }
+
+      body {
+        background: linear-gradient(135deg, var(--secondary-color), var(--background-color));
+        color: var(--text-color);
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: rgba(26, 26, 26, 0.8);
+        backdrop-filter: blur(10px);
+      }
+
+      nav a {
+        color: var(--text-color) !important;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--primary-color);
+      }
+
+      .container {
+        background-color: rgba(51, 51, 51, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .team-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+      }
+      .team-member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      .team-member img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-primary" href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5">
+      <section>
+        <hgroup>
+          <h2><strong>About Lifestyle Vibes</strong></h2> <!-- Judul di-bold -->
+          <h3>Our Story & Vision</h3>
+        </hgroup>
+        <p>
+          Lifestyle Vibes was created with a simple goal: to help people live
+          better, healthier, and more fulfilling lives. We believe that true
+          happiness comes from balance, mindfulness, and a deep connection to
+          the world around us.
+        </p>
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to inspire and empower individuals to live
+          consciously. We cover various aspects of life including wellness,
+          fitness, fashion, and mindfulness to help our audience elevate their
+          everyday experiences.
+        </p>
+        <h3>Meet the Team</h3>
+        <figure>
+          <img
+            src="/image/3 pillar men.jpg"
+            alt="Meet the Team"
+            class="img-fluid rounded"
+          />
+          <figcaption>Meet the passionate team behind Lifestyle Vibes</figcaption>
+        </figure>
+        <div class="team-container">
+          <div class="team-member">
+            <h4>Esidisi</h4>
+            <img
+              src="/image/esidisi.jpg"
+              alt="Esidisi"
+              class="img-fluid rounded"
+            />
+            <p>Wellness Coach and Fitness Expert</p>
+          </div>
+          <div class="team-member">
+            <h4>Kars</h4>
+            <img
+              src="/image/kars.jpeg"
+              alt="Kars"
+              class="img-fluid rounded"
+            />
+            <p>Fashion Consultant and Stylist</p>
+          </div>
+          <div class="team-member">
+            <h4>Wamuu</h4>
+            <img
+              src="/image/Wamuu.jpg"
+              alt="Wamuu"
+              class="img-fluid rounded"
+            />
+            <p>Mindfulness and Meditation Guide</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <small>
+          <a href="#" class="text-light">Privacy Policy</a> •
+          <a href="#" class="text-light">Terms & Conditions</a> •
+          &copy; 2024 Brayen Preis_535230022
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

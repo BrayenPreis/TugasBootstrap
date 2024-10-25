@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subscribe - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --primary-color: #ff4136;
+        --secondary-color: #333333;
+        --background-color: #1a1a1a;
+        --text-color: #ffffff;
+        --accent-color: #ff8c00;
+      }
+
+      body {
+        background: linear-gradient(135deg, var(--secondary-color), var(--background-color));
+        color: var(--text-color);
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: rgba(26, 26, 26, 0.8);
+        backdrop-filter: blur(10px);
+      }
+
+      nav a {
+        color: var(--text-color) !important;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--primary-color);
+      }
+
+      .container {
+        background-color: rgba(51, 51, 51, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Lifestyle Vibes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active btn btn-primary" href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5">
+      <h1 class="text-center mb-4">Join Our Newsletter</h1>
+      <p class="text-center mb-5">
+        Don't miss out on the latest updates, tips, and exclusive content. Subscribe now!
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="FullName" name="FullName" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Subscribe Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <small>
+          <a href="#" class="text-light">Privacy Policy</a> •
+          <a href="#" class="text-light">Terms & Conditions</a> •
+          &copy; 2024 Brayen Preis_535230022
+        </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
